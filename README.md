@@ -23,7 +23,7 @@ cd portfolio
 ### Open Locally:
 Simply open `index.html` in your browser.
 
-## 📂 File Structure
+## File Structure
 ```
 portfolio/
 │── index.html        # Home page
@@ -37,12 +37,11 @@ portfolio/
 ```
 
 ## Live Demo
-[View the live website](#) *(Update this link when hosted)*
+[View the live website](#) *(https://autoscotty43.github.io/index.html)*
 
 ## Contact Me
 - **Email:** [jaredbscott42@gmail.com](mailto:jaredbscott42@gmail.com)
 - **GitHub:** [Autoscotty43](https://github.com/Autoscotty43)
 
 ---
- *Feel free to fork and modify this project!* 🎉
 
