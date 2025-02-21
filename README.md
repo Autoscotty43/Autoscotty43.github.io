@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This site showcases my projects, exper
 
 ## Features
 - Responsive design for desktop and mobile.
-- Sections: Home, About, Projects, and Contact.
+- Sections: Home, About, Projects, Certificates, Resume and Contact.
 - Links to my GitHub repositories.
 - Clean and modern UI following a consistent theme.
 
@@ -30,6 +30,8 @@ portfolio/
 │── about.html        # About me page
 │── projects.html     # Projects showcase
 │── contact.html      # Contact details
+│── certificates.html   # certificates page
+│── Resume.html       # Resume page
 │── css/
 │   ├── style.css     # Main stylesheet
 │── images/           # Image assets
