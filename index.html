@@ -2,26 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jared Scott | Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Portfolio of Jared Scott - Software Developer specializing in Android and Web Development.">
+  <script defer src="js/script.js"></script>
 
-  <!-- Social Media Preview -->
+  <meta name="description" content="Portfolio of Jared Scott - Software Developer specializing in Android and Web Development.">
   <meta property="og:title" content="Jared Scott | Portfolio">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://autoscotty43.github.io/Autoscotty43.Portfolio.github.io/">
+  <meta property="og:url" content="https://autoscotty43.github.io/">
   <meta property="og:image" content="img/preview.png">
   <meta property="og:image:alt" content="Jared Scott Portfolio Preview">
 
-  <!-- Icons -->
   <link rel="icon" href="img/favicon.ico" sizes="any">
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/icon.png">
-
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#6a0dad">
 </head>
 
 <body>
@@ -47,73 +45,64 @@
 <section id="hero">
   <div class="container">
     <h2>Welcome to My Portfolio</h2>
-    <p>Discover my journey in software development, from Android apps to web applications.</p>
-    <a href="projects.html" class="btn">Explore My Work</a>
+    <p>Discover my journey in software development, from Web applications & Android Apps to Software development & Deep Learning Ai Models.</p>
+    <a href="#projects" class="btn">Explore My Work</a>
   </div>
 </section>
 
-<!-- ABOUT ME SECTION -->
-<section id="about">
+<!-- SKILLS -->
+<section id="skills">
   <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I am Jared Scott, a software developer with expertise in building **Android apps (Jetpack Compose, Kotlin)** and **web applications**.
-    </p>
-    <p>
-      Currently studying at **Nova Scotia Community College**, I have developed various projects, including calculators, databases, and interactive UI apps.
-    </p>
-    <a href="about.html" class="btn">Learn More</a>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><span>Database Development</span> <div class="progress-bar"><span style="width: 90%;"></span></div></div>
+      <div class="skill"><span>Web Development</span> <div class="progress-bar"><span style="width: 85%;"></span></div></div>
+      <div class="skill"><span>Software Development</span> <div class="progress-bar"><span style="width: 50%;"></span></div></div>
+      <div class="skill"><span>Android Development</span> <div class="progress-bar"><span style="width: 75%;"></span></div></div>
+    </div>
   </div>
 </section>
 
-<!-- PROJECTS OVERVIEW -->
+<!-- PROJECTS -->
 <section id="projects">
   <div class="container">
     <h2>My Work</h2>
-
-    <div class="project">
-      <img src="img/project1.png" alt="Project 1">
-      <div>
-        <h3>GUI Calculator</h3>
-        <p>A user-friendly calculator built with Java and JavaFX.</p>
-        <a href="https://github.com/Autoscotty43/JS_GUI_Calculator" class="btn">View on GitHub</a>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="img/project5.png" alt="Project Placeholder">
+        <h3>Project 1</h3>
+        <b>Student Information System.</b>
+        <p>Built using C++ and Cmake. This console based program allows users to track information regarding students. The user can Add or delete students.</p>
+      </div>
+      <div class="project">
+        <img src="img/project6.png" alt="Project Placeholder">
+        <h3>Project 2</h3>
+        <b>Fitness Club Web App</b>
+        <p>Built using Java, Jekyll, Springboot, Thymleaf and more. This Web App allows users to sign in accounts regarding their clearance.</p>
+      </div>
+      <div class="project">
+        <img src="img/project1.png" alt="Project Placeholder">
+        <h3>Project 3</h3>
+        <b>GUI Calculator.</b>
+        <p>Built using Java and Kotlin. This GUI calculator allows users to complete basic math such as Addition, Subtraction, Division, Multiplication.</p>
+      </div>
+      <div class="project">
+        <img src="img/project4.png" alt="Project Placeholder">
+        <h3>Project 4</h3>
+        <b>Bank Management System</b>
+        <p>Built using C++ and Cmake. This console based ATM allows user the to deposit and withdraw money from an account.</p>
       </div>
     </div>
-
-    <div class="project">
-      <img src="img/project2.png" alt="Project 2">
-      <div>
-        <h3>Weight Converter</h3>
-        <p>A simple weight conversion app using Android Jetpack Compose.</p>
-        <a href="https://github.com/Autoscotty43/JS_Weight_Convertor" class="btn">View on GitHub</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="img/project3.png" alt="Student Information System">
-      <h3>Student Information System</h3>
-      <p>Console-based system for managing student records.</p>
-      <a href="#" class="btn">View Project</a>
-    </div>
-
-    <div class="project">
-      <img src="img/project4.png" alt="ATM Machine">
-      <h3>ATM Machine</h3>
-      <p>Console-based ATM-Machine for transactions.</p>
-      <a href="#" class="btn">View Project</a>
-    </div>
-
   </div>
 </section>
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT -->
 <section id="contact">
   <div class="container">
     <h2>Let's Connect</h2>
-    <p>Interested in working together or have questions? Feel free to reach out.</p>
     <p>Email: <a href="mailto:jaredbscott42@gmail.com">jaredbscott42@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/Autoscotty43">Autoscotty43</a></p>
-    <a href="contact.html" class="btn">Contact Me</a>
+    <a href="#" class="btn">Contact Me</a>
   </div>
 </section>
 
@@ -122,6 +111,5 @@
   <p>&copy; 2024 Jared Scott. All rights reserved.</p>
 </footer>
 
-<script src="js/app.js"></script>
 </body>
 </html>

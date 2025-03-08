@@ -1,289 +1,342 @@
+/* style.css */
+
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
-  background: url('../img/background.jpg') no-repeat center center fixed;
+  line-height: 1.6;
+  color: #000000;
+  padding: 20px;
+  background-image: url('img/background.jpg');
   background-size: cover;
-  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #eae8e8;
+  transition: transform 0.3s ease;
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
+  max-width: 960px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-/* Header */
 header {
-  background: #6a0dad;
-  color: white;
-  padding: 20px;
+  background-color: #3475ca;
+  color: #fff;
+  padding: 10px 0;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
-  color: white;
-  margin: 0 15px;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  margin: 0 15px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-/* Profile Picture */
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+nav a:hover {
+  background-color: #34b5ca;
 }
 
-/* Hero Section */
+/* Hero Section (index.html) */
 #hero {
-  padding: 50px;
-  background: lightblue;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+}
+
+#hero h2 {
+  font-size: 1.8em;
+  margin-bottom: 25px;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background: #6a0dad;
-  color: white;
+  padding: 12px 25px;
+  background-color: #34b5ca;
+  color: #FFF;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
-/* Projects Section */
-/* Projects Section */
-#projects {
+.btn:hover {
+  background-color: #3475ca;
+}
+
+/* About Section (about.html) */
+#about {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.about-content {
   display: flex;
-  justify-content: center; /* Centers the project section */
   align-items: center;
-  padding: 40px 0;
+  gap: 40px;
 }
 
-/* Container for 2x2 Project Grid */
-#projects .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns for a 2x2 grid */
-  gap: 20px; /* Spacing between projects */
-  max-width: 700px; /* Increased width for better visibility */
-  margin: auto;
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Individual Project Styling */
-/* Projects Section */
-#projects {
-  display: flex;
-  justify-content: center; /* Centers the project section */
-  align-items: center;
-  padding: 40px 0;
-}
-
-/* Container for 2x2 Project Grid */
-#projects .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns for 2x2 layout */
-  grid-template-rows: repeat(2, auto);
-  gap: 30px; /* Space between projects */
-  max-width: 900px; /* Adjusted width */
-  margin: auto;
-  text-align: center;
-}
-
-/* Individual Project Styling */
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: white;
-  padding: 25px; /* Padding for spacing */
-  border-radius: 10px;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
-  width: 300px; /* Adjusted size */
-}
-
-/* Project Image */
-.project img {
-  max-width: 120px; /* Image size */
-  height: auto;
-  border-radius: 5px;
-}
-
-/* Project Title */
-.project h3 {
-  margin: 15px 0 8px;
-  font-size: 1.2rem;
-}
-
-/* Project Description */
-.project p {
-  font-size: 1rem;
-  margin-bottom: 12px;
-}
-
-/* Project Button */
-.project .btn {
-  display: inline-block;
-  background: #6a0dad;
-  color: white;
-  padding: 8px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-/* Footer */
-footer {
-  background: #333;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-/* About Section */
-#about h3 {
-  margin-top: 30px;
-  font-size: 24px;
-  color: #333;
+#about h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #3475ca;
 }
 
 #about p {
-  border: 2px solid #6a0dad; /* Purple border around text */
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
-  background: #ffffff;
-  text-align: left;
+  margin-bottom: 25px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Layout for Personal Life and Interests */
 .row {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .col {
-  width: 50%;
-  padding: 20px;
+  flex: 1;
 }
 
-.interest-img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  margin: 0 auto;
-}
-
-/* Image Gallery */
-.image-gallery {
-  margin-top: 30px;
-}
-
+.interest-img,
 .gallery-img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.interest-img:hover,
+.gallery-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-gallery {
+  margin-top: 40px;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #fff; /* Or your preferred background */
+  padding: 60px 0;
+}
+
+.skills-container { /* New container for skills grid */
   max-width: 800px;
-  height: auto;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 30px;
 }
 
-/* Certificates Section */
-#certificates {
-  padding: 50px 0;
-  background: #f4f4f4;
-  text-align: center;
+.skill {
+  margin-bottom: 20px;
 }
 
-/* Certificate Container */
-.certificate {
-  display: inline-block;
-  background: white;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
-  width: 250px; /* Adjust width of certificate container */
-  text-align: center;
-}
-
-/* Certificate Image */
-.certificate-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.skill h3 { /* Style skill titles */
+  color: #3475ca;
   margin-bottom: 10px;
 }
 
-/* Certificate Text */
-.certificate p {
-  font-size: 1rem;
-  color: #333;
-  margin-top: 10px;
-}
-
-.resume-container {
-  width: 60%;
-  background: white;
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Resume Section */
-#resume {
-  padding: 20px;
-}
-
-/* Section Borders */
-h3, h4 {
-  border-left: 4px solid #4CAF50;
-  padding-left: 10px;
-  margin-top: 20px;
-}
-
-/* Text Borders */
-#resume p, ul {
-  border: 2px solid #800080; /* Purple border */
-  padding: 10px;
-  border-radius: 8px;
-  background-color: #f9f0ff; /* Light purple background */
-}
-
-/* Lists */
-ul {
-  padding-left: 20px;
-}
-
-ul li {
-  background: #e8f5e9;
-  padding: 8px;
-  margin: 5px 0;
+.progress-bar {
+  height: 20px;
+  background-color: #e9ecef; /* Light gray background */
   border-radius: 5px;
-  display: flex;
-  align-items: center;
+  overflow: hidden;
+  position: relative; /* For positioning the percentage */
 }
 
-/* Work Experience */
-h4 {
-  font-size: 1.1em;
-  color: #333;
+.progress-bar span { /* The colored progress */
+  display: block;
+  height: 100%;
+  background-color: #34b5ca; /* Your accent color */
+  border-radius: 5px;
+  transition: width 0.5s ease; /* Smooth transition */
+  width: 50%; /* Initial width - half full */
 }
 
-/* Resume Images */
+.progress-percentage { /* Style for the percentage text */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #171616; /* Darker text color */
+  font-size: 0.9em;
+}
+
+/* Projects Section (projects.html) */
+#projects {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.project {
+  background-color: #34b5ca;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+  width: 400px;
+  height: 465px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.project p {
+  margin-bottom: 20px;
+}
+
+.project .btn {
+  background-color: #636262;
+}
+
+/* Certificates Section (certificates.html) */
+#certificates {
+  background-color: #34b5ca;
+  padding: 60px 0;
+  text-align: center; /* Center the certificates */
+}
+
+.certificate {
+  display: inline-block;
+  background: #ffffff;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  vertical-align: top;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; /* Align text within certificate to the left */
+}
+
+.certificate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certificate img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.certificate h3 {
+  margin-bottom: 15px;
+  color: #3475ca;
+}
+
+.certificate p {
+  margin-bottom: 20px;
+}
+
+/* Resume Section (resume.html) */
+#resume {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+#resume h2,
+#resume h3,
+#resume h4 {
+  color: #3475ca;
+  margin-bottom: 15px;
+}
+
+#resume p,
+#resume ul {
+  margin-bottom: 20px;
+}
+
+#resume ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+#resume li {
+  margin-bottom: 10px;
+}
+
 .resume-images {
   text-align: center;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .resume-images img {
-  width: 45%;
-  max-width: 500px;
+  max-width: 50%;
+  height: auto;
   margin: 10px;
-  border: 3px solid #4CAF50;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section (contact.html) */
+#contact {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #3475ca;
+  margin-bottom: 20px;
 }
